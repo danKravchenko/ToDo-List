@@ -1,0 +1,148 @@
+html{
+    height: 100%;
+}
+
+body{
+    background: linear-gradient(to top,#5096df, #a8c9ce) no-repeat fixed;
+}
+
+.task-list{
+    border-radius: 20px;
+    width: 550px;
+    background-color: white;
+    margin: 150px auto 0;
+}
+
+.wrapper{
+    width: 440px;
+    margin: 25px auto 0;
+    padding-top: 10px;
+}
+
+.block-data{
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-help{
+    text-align: center;
+}
+
+.block-info{
+    height: 80px;
+    background-color: white;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input{
+    padding-left: 20px; 
+    height: 40px;
+    width: 350px;
+    border: 3px solid #f0f0f0;
+    border-radius: 3px;
+    outline: none;
+}
+
+input[placeholder="Add your new task"]{
+    font-size: 20px; 
+}
+
+.add-new-task{
+    height: 47px;
+    width: 50px;
+    position: relative;
+    border: 3px solid #297bb2;
+    border-radius: 3px;
+    font-size: 35px;
+    background-color: #297bb2;
+    color: white;
+    outline: none;
+}
+.add-new-task:hover{
+    cursor: pointer;
+    border: 3px solid #28658d;
+    background-color: #28658d;
+}
+
+.task{
+    display: flex;
+    background-color: #f2f2f2;
+    margin-top: 30px;
+    height: 50px;
+    width: 430px;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.task-text{
+    color: #5a5a5a;
+    width: 325px;
+}
+
+.btn-cancel{
+    content:url(Images/icon.png); 
+    background-color: #bd1408; 
+    width: 40px;
+    height: 40px;
+}
+
+.btn-cancel:hover{
+    background-color: #800d05; 
+    cursor: pointer;
+}
+
+input[type="checkbox"]{
+    width: 34px;
+    height: 35px;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + .check{
+    content: url(Images/icon-2.png);
+    background-color: rgb(71, 121, 214);
+}
+
+.check{
+    border: 3px solid rgb(71, 121, 214);
+    background-color: white;
+    position: absolute;
+    width: 35px;
+    height: 34px;
+}
+
+.info-text{
+    padding-top: 13px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.clear-btn{
+    height: 47px;
+    width: 100px;
+    top: 20px;
+    position: relative;
+    border: 3px solid #297bb2;
+    border-radius: 3px;
+    font-size: 20px;
+    background-color: #297bb2;
+    color: white;
+    outline: none;
+}
+
+.clear-btn:hover{
+    cursor: pointer;
+    border: 3px solid #28658d;
+    background-color: #28658d;
+}
